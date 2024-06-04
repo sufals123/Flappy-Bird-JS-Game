@@ -1,0 +1,157 @@
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* To prevent scrollbars */
+    position: relative; /* For positioning elements */
+}
+
+/* Background */
+.background {
+    height: 100%;
+    width: 100%;
+    background: url('img/background.png') no-repeat; 
+    position: absolute;
+    z-index: -1; /* Move it behind other elements */
+}
+
+/* Bird */
+.bird {
+    height: 40px;
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 15vw;
+    z-index: 100;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+/* Pipe */
+.pipe {
+    position: absolute;
+    height: 80px;
+    width: 2vw;
+    background-color: green;
+    border: 2px solid black;
+}
+
+/* Score */
+.score {
+    position: absolute;
+    z-index: 1000;
+    height: 10vh;
+    font-size: 4vh;
+    font-weight: 100;
+    color: rgb(43, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 20px;
+}
+
+.up-pipe, .down-pipe {
+    width: 100%;
+    height: 1vh;
+    background-color: black;
+    position: absolute;
+}
+
+.down-pipe {
+    top: 400px; /* Adjust as needed */
+}
+.enter{
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    position: relative;
+    top: 406px;
+    border: none;
+    
+    cursor: pointer;
+    z-index: 55555555;
+}
+
+/* mobile devices */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .bird {
+        height: 30px;
+        width: 50px;
+        left: 10vw;
+    }
+
+    .score {
+        font-size: 3vh;
+        top: 5px;
+        right: 10px;
+    }
+
+    .enter {
+        width: 120px;
+        height: 50px;
+        font-size: 24px;
+        top: 350px;
+        left: 5px;
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    .bird {
+        height: 20px;
+        width: 35px;
+        left: 8vw;
+    }
+
+    .score {
+        font-size: 2.5vh;
+        top: 5px;
+        right: 5px;
+    }
+    .enter{
+        width: 100%;
+        height: 100%;
+        font-size: 32px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        background-color: white;
+        color: white;
+        position: relative;
+        top: 404px;
+        left: -1.5px;
+        border: none;
+        
+        cursor: pointer;
+        z-index: 55555555;
+    }
+
+    
+
+    .pipe {
+        position: absolute;
+        height: 60px;
+        width: 2vw;
+        background-color: green;
+        border: 2px solid black;
+    }
+    
+}
+
+
+
+
