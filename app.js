@@ -259,7 +259,7 @@ function createPipeMobile() {
   // Set the pipe's initial position (off-screen to the right)
   pipe.style.left = "1000px";
   // Set the pipe's top position (random position between 0 and 40% of window height)
-  pipe.style.top = Math.random() * (window.innerHeight * 0.3) + "px";
+  pipe.style.top = Math.random() * (window.innerHeight * 0.2) + "px";
 
   // Append the pipe to the document body
   document.body.append(pipe);
